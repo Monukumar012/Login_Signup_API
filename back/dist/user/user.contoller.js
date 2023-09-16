@@ -21,6 +21,8 @@ let UserController = class UserController {
         this.userService = userService;
     }
     registerUser(registerData) {
+        console.log("register");
+        console.log(registerData);
         return this.userService.registerUser(registerData);
     }
     loginUser(loginData) {
